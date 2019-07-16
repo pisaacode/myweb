@@ -1,0 +1,89 @@
+body{
+    background-color: #eae8e7;
+    color: #767270;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    margin-top: 24px;
+}
+.lista{
+    background-color: white;
+    padding: 10px;
+}
+.lista .item{
+    border-bottom: #00000020 1px solid;
+    margin-bottom: 10px;
+}
+.lista .item:last-child{
+    border-bottom: #00000020 0px solid;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+h2 {
+    font-size: 22pt;
+    line-height: 37pt;
+    margin: 0px;
+}
+h3 {
+    margin: 0px;
+    font-size: 12pt;
+    line-height: 20pt;
+}
+.lista span {
+    color: #5da4d9;
+    margin-top: 0px;
+    font-size: 10pt;
+    line-height: 15pt;
+}
+.lista h3 span {
+    color: #767270;
+    margin-top: 0px;
+    font-size: 10pt;
+    line-height: 15pt;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 17pt;
+}
+.blue, .list-group-item{
+    background-color: #5da4d9;
+    color: white;
+}
+
+.blue p{
+    color: white;
+}
+.list-group-item span{
+    font-size: 15px;
+}
+
+.list-group-item .progress{
+    margin-bottom: 18px;
+}
+.progress{
+    background-color: #4783c2;
+}
+.progress-bar{
+    background-color: white;
+}
+li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 17pt;
+}
+@media only screen and (min-width: 993px){
+    .container {
+        width: 70%;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 70%;
+    }
+}
+
