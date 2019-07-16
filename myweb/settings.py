@@ -25,7 +25,7 @@ SECRET_KEY = 'k+%0$7=9z-uic2u3+iui%9up3+fw=5-z%*dah_4773s9xaf2nt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -118,11 +118,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-DEBUG = True
+PROD = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-if DEBUG:
+if PROD:
+
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATIC_URL = '/static/'
 
@@ -130,5 +131,11 @@ if DEBUG:
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
     )
-else:    
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+    
+else:        
+    STATICFILES_DIRS = (
+        # Put strings here, like '/home/html/static' or 'C:/www/django/static'.
+        # Always use forward slashes, even on Windows.
+        # Don't forget to use absolute paths, not relative paths.
+        os.path.join(BASE_DIR, 'static'),
+    )
