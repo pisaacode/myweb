@@ -123,11 +123,12 @@ DEBUG = True
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 if DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_URL = '/static/'
+
+    # Extra places for collectstatic to find static files.
     STATICFILES_DIRS = (
-        # Put strings here, like '/home/html/static' or 'C:/www/django/static'.
-        # Always use forward slashes, even on Windows.
-        # Don't forget to use absolute paths, not relative paths.
-    os.path.join(BASE_DIR, 'static'),
+        os.path.join(BASE_DIR, 'static'),
     )
 else:    
     STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
