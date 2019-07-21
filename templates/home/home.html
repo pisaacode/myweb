@@ -2,14 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.ico' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Isaac Parra</title>
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?id=5">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
 
@@ -18,10 +19,16 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 pi">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                    <div class="card-img-caption">
+                        <img class="card-img-top" src="http://placehold.it/150x150" alt="Card image cap">
+                    </div>
                     <div class="card-body blue">
+                      <h4 class="card-title">Isaac Parra<p>Ing. Informatica</p></h4>
+                      <a href="https://github.com/isaacFyF" target="_blank" class="btn-git"><i class="fab fa-github pr-1 text-dark"></i> </a>
+                      <a href="https://www.linkedin.com/in/isaac-parra-2975026a/" target="_blank" class="btn-git"><i class="fab fa-linkedin pr-1 text-dark"></i> </a>
+                      <hr class="mt-0" style="color: #0056b2;" />
                       <h5 class="card-title">Extracto</h5>
                       <p class="card-text">Soy un Ingeniero Informático con un perfil full stack en desarrollo web, he trabajado con diferentes lenguajes
                            y frameworks entre los que puedo mencionar, Django, Python, BackBone, Swift, Javascript, PHP, Phonegap /Cordova, APEX/Oracle y PL/SQL.</p>
@@ -81,10 +88,6 @@
                                         <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <span>Docker</span>
-                                    <div class="progress" style="height: 2px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>AWS</span>
                                     <div class="progress" style="height: 2px;">
                                         <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>

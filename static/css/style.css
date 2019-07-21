@@ -86,4 +86,13 @@ li{
         max-width: 70%;
     }
 }
-
+@media (max-width: 993px){
+    .pi {
+        padding: 0px;
+    }
+}
+@media (min-width: 994px){
+    .pi {
+        padding-left: 15px;
+    }
+}
