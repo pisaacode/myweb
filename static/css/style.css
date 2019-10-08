@@ -2,6 +2,9 @@ body{
     background-color: #eae8e7;
     color: #767270;
     font-family: 'Roboto', sans-serif;
+    url('https://images.pexels.com/photos/925743/pexels-photo-925743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1024');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     margin-top: 24px;
